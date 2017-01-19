@@ -1,1 +1,148 @@
-default
+<!DOCTYPE html>
+<html>
+<head>
+  <title>R Presentation</title>
+  <meta charset="utf-8">
+  <meta name="description" content="R Presentation">
+  <meta name="author" content="github.com/sylvest00">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>R Presentation</h1>
+    <h2>Week 3, Project 2</h2>
+    <p>github.com/sylvest00<br/>January 22, 2017</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <article data-timings="">
+    <style>
+.title-slide {
+  background-color: #FFFFFF;
+  h2{color: #FFFFFF;}
+}
+</style>
+
+<h2>Project Objective</h2>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="s1" style="background:white;">
+  <hgroup>
+    <h2>Code to Generate Figure</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">library(plotly)
+data(&quot;EuStockMarkets&quot;)
+df &lt;- as.data.frame(EuStockMarkets)
+df$time = 1:dim(df)[1]
+
+p &lt;- plot_ly(data = df, x = ~time, y = ~DAX, type = &#39;scatter&#39;, mode = &#39;markers&#39;, name = &#39;DAX&#39;) %&gt;%
+    add_trace(y = ~SMI, type = &#39;scatter&#39;, mode = &#39;markers&#39;, name = &#39;SMI&#39;) %&gt;%
+    add_trace(y = ~CAC, type = &#39;scatter&#39;, mode = &#39;markers&#39;, name = &#39;CAC&#39;) %&gt;%
+    add_trace(y = ~FTSE, type = &#39;scatter&#39;, mode = &#39;markers&#39;, name = &#39;FTSE&#39;) %&gt;%
+    layout(xaxis = list(title = &#39;Time (Number of Days)&#39;), yaxis = list(title = &#39;Closing Price&#39;))
+p
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="s2" style="background:white;">
+  <hgroup>
+    <h2>Daily Closing Prices of Major European Stock Indices, 1991-1998</h2>
+  </hgroup>
+  <article data-timings="">
+    <div>
+    <a href="https://plot.ly/~ssylvest00/1/?share_key=7gkg8InnjCcppRbHRLUKzQ" target="_blank" title="DDP_project2_euroStocks" style="display: block; text-align: center;"><img src="https://plot.ly/~ssylvest00/1.png?share_key=7gkg8InnjCcppRbHRLUKzQ" alt="DDP_project2_euroStocks" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="ssylvest00:1" sharekey-plotly="7gkg8InnjCcppRbHRLUKzQ" src="https://plot.ly/embed.js" async></script>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="s3" style="background:white;">
+  <hgroup>
+    <h2>Conclusion</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>More stuff</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='NA'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Code to Generate Figure'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Daily Closing Prices of Major European Stock Indices, 1991-1998'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Conclusion'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
