@@ -30,7 +30,8 @@ knit        : slidify::knit2slides
 
 ## Code to Generate Figure
 
-```{r, warning = FALSE, message = FALSE, eval = FALSE}
+
+```r
 library(plotly)
 data("EuStockMarkets")
 df <- as.data.frame(EuStockMarkets)
