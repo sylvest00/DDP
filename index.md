@@ -9,6 +9,10 @@ hitheme     : tomorrow      #
 widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
+github:
+    user: sylvest00
+    repo: slidifyTest
+    
 ---
 
 ## Read-And-Delete
@@ -21,8 +25,11 @@ knit        : slidify::knit2slides
 
 ## Slide 2
 
-> 1. point1
-> 2. point2
-> 3. point3
+1. point1
+2. point2
+3. point3
 
+---
 
+## slide 3
+testing still
