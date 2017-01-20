@@ -48,6 +48,11 @@ p
 --- .class #s2 bg:white
 
 ## Daily Closing Prices of Major European Stock Indices, 1991-1998
+<div>
+    <a href="https://plot.ly/~ssylvest00/1/?share_key=7gkg8InnjCcppRbHRLUKzQ" target="_blank" title="DDP_project2_euroStocks" style="display: block; text-align: center;"><img src="https://plot.ly/~ssylvest00/1.png?share_key=7gkg8InnjCcppRbHRLUKzQ" alt="DDP_project2_euroStocks" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plot.ly/404.png';" /></a>
+    <script data-plotly="ssylvest00:1" sharekey-plotly="7gkg8InnjCcppRbHRLUKzQ" src="https://plot.ly/embed.js" async></script>
+</div>
+
 
 
 
