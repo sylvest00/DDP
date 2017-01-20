@@ -1,37 +1,59 @@
 ---
-title       : test test test
-subtitle    : 
-author      : test
-job         : test
+title       : R Presentation
+subtitle    : Week 3, Project 2
+author      : github.com/sylvest00
+job         : January 22, 2017
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
-github:
-    user: sylvest00
-    repo: slidifyTest
-    
 ---
 
-## Read-And-Delete
+<style>
+.title-slide {
+  background-color: #FFFFFF;
+  h2{color: #FFFFFF;}
+}
+</style>
 
-1. Edit YAML front matter
-2. Write using R Markdown
-3. Use an empty line followed by three dashes to separate slides!
 
---- .class #id 
 
-## Slide 2
+## Project Objective
 
-1. point1
-2. point2
-3. point3
-4. added to see when github updates page
 
----
 
-## slide 3
+--- .class #s1
 
-testing still
+
+
+## Code to Generate Figure
+
+
+```r
+library(plotly)
+data("EuStockMarkets")
+df <- as.data.frame(EuStockMarkets)
+df$time = 1:dim(df)[1]
+
+p <- plot_ly(data = df, x = ~time, y = ~DAX, type = 'scatter', mode = 'markers', name = 'DAX') %>%
+    add_trace(y = ~SMI, type = 'scatter', mode = 'markers', name = 'SMI') %>%
+    add_trace(y = ~CAC, type = 'scatter', mode = 'markers', name = 'CAC') %>%
+    add_trace(y = ~FTSE, type = 'scatter', mode = 'markers', name = 'FTSE') %>%
+    layout(xaxis = list(title = 'Time (Number of Days)'), yaxis = list(title = 'Closing Price'))
+p
+```
+
+--- .class #s2 bg:white
+
+## Daily Closing Prices of Major European Stock Indices, 1991-1998
+
+
+
+--- .class #s3
+
+
+## Conclusion
+
+More stuff

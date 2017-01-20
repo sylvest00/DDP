@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>test test test</title>
+  <title>R Presentation</title>
   <meta charset="utf-8">
-  <meta name="description" content="test test test">
-  <meta name="author" content="test">
+  <meta name="description" content="R Presentation">
+  <meta name="author" content="github.com/sylvest00">
   <meta name="generator" content="slidify" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -13,8 +13,7 @@
     media="only screen and (max-device-width: 480px)" >
   <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
   <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
-  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
-
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
   
   <!-- Grab CDN jQuery, fall back to local if offline -->
   <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
@@ -32,55 +31,68 @@
     <!-- LOGO SLIDE -->
         <slide class="title-slide segue nobackground">
   <hgroup class="auto-fadein">
-    <h1>test test test</h1>
-    <h2></h2>
-    <p>test<br/>test</p>
+    <h1>R Presentation</h1>
+    <h2>Week 3, Project 2</h2>
+    <p>github.com/sylvest00<br/>January 22, 2017</p>
   </hgroup>
-    <a href="https://github.com/sylvest00/slidifyTest/zipball/gh-pages" class="example">
-     Download
-    </a>
   <article></article>  
 </slide>
     
 
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
-  <hgroup>
-    <h2>Read-And-Delete</h2>
-  </hgroup>
   <article data-timings="">
-    <ol>
-<li>Edit YAML front matter</li>
-<li>Write using R Markdown</li>
-<li>Use an empty line followed by three dashes to separate slides!</li>
-</ol>
+    <style>
+.title-slide {
+  background-color: #FFFFFF;
+  h2{color: #FFFFFF;}
+}
+</style>
+
+<h2>Project Objective</h2>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="class" id="id" style="background:;">
+<slide class="class" id="s1" style="background:;">
   <hgroup>
-    <h2>Slide 2</h2>
+    <h2>Code to Generate Figure</h2>
   </hgroup>
   <article data-timings="">
-    <ol>
-<li>point1</li>
-<li>point2</li>
-<li>point3</li>
-<li>added to see when github updates page</li>
-</ol>
+    <pre><code class="r">library(plotly)
+data(&quot;EuStockMarkets&quot;)
+df &lt;- as.data.frame(EuStockMarkets)
+df$time = 1:dim(df)[1]
+
+p &lt;- plot_ly(data = df, x = ~time, y = ~DAX, type = &#39;scatter&#39;, mode = &#39;markers&#39;, name = &#39;DAX&#39;) %&gt;%
+    add_trace(y = ~SMI, type = &#39;scatter&#39;, mode = &#39;markers&#39;, name = &#39;SMI&#39;) %&gt;%
+    add_trace(y = ~CAC, type = &#39;scatter&#39;, mode = &#39;markers&#39;, name = &#39;CAC&#39;) %&gt;%
+    add_trace(y = ~FTSE, type = &#39;scatter&#39;, mode = &#39;markers&#39;, name = &#39;FTSE&#39;) %&gt;%
+    layout(xaxis = list(title = &#39;Time (Number of Days)&#39;), yaxis = list(title = &#39;Closing Price&#39;))
+p
+</code></pre>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="slide-3" style="background:;">
+<slide class="class" id="s2" style="background:white;">
   <hgroup>
-    <h2>slide 3</h2>
+    <h2>Daily Closing Prices of Major European Stock Indices, 1991-1998</h2>
   </hgroup>
   <article data-timings="">
-    <p>testing still</p>
+    
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="s3" style="background:;">
+  <hgroup>
+    <h2>Conclusion</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>More stuff</p>
 
   </article>
   <!-- Presenter Notes -->
@@ -92,20 +104,26 @@
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Read-And-Delete'>
+        data-slide=1 title='NA'>
          1
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Slide 2'>
+        data-slide=2 title='Code to Generate Figure'>
          2
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='slide 3'>
+        data-slide=3 title='Daily Closing Prices of Major European Stock Indices, 1991-1998'>
          3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Conclusion'>
+         4
       </a>
     </li>
   </ul>
