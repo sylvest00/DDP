@@ -1,1 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Visualizing Capital Bike Share Data</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Visualizing Capital Bike Share Data">
+  <meta name="author" content="github.com/sylvest00">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
 
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Visualizing Capital Bike Share Data</h1>
+    <h2>Developing Data Products, Shiny App Project</h2>
+    <p>github.com/sylvest00<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <article data-timings="">
+    <style>
+.title-slide {
+  background-color: #FFFFFF;
+  h2{color: #FFFFFF;}
+}
+</style>
+
+<h2>Presentation Outline</h2>
+
+<p>The following slides are arranged as follows:</p>
+
+<ul>
+<li><p>Introduction to the app</p></li>
+<li><p>Instructions</p></li>
+<li><p>Image of the app when fewer than 5 days are selected</p></li>
+<li><p>Image of the app when more than 4 days are selected</p></li>
+<li><p>Links to the app and Github repository containing the associated
+server.R file and ui.R file</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="outline" style="background:;">
+  <hgroup>
+    <h2>Introduction</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The Capital Bike Share Shiny App visualizes the frequency and total hours in which bikes were rented under the <a href="https://www.capitalbikeshare.com/">Capital Bike Share program</a> in Washington, D.C.</p>
+
+<p>The data is provided by the bike share program on their <a href="https://www.capitalbikeshare.com/system-data">website</a>. The data sets are
+large, so only one reported annual quarter (quarter #2 from April 1, 2016 to
+June 30, 2016) was used.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="intro" style="background:;">
+  <hgroup>
+    <h2>Instructions</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<div style='float:left;width:48%;' class='centered'>
+  <p>To use this app, select a range of dates, between April 1, 2016 and June 30, 2016
+in which you would like to examine. Hit the &quot;RUN!&quot; button to plot the total
+number of bike rentals and the total number of hours used during rentals across
+different account types, casual and registers.</p>
+
+<p>Helper instructions are located at the top of the side bar panel.</p>
+
+<p><span class = 'red'>WARNING: It may take upwards of 20-30 seconds for the figures to render.</span></p>
+
+</div>
+<div style='float:right;width:48%;'>
+  <p><img width=400px src="run_button2.png"></img></p>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="instructions" style="background:;">
+  <hgroup>
+    <h2>If fewer than 5 days are selected...</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>a bar plot will be generated.
+<br/>
+<br/></p>
+
+<div style='text-align: center;'>
+    <img width=600px src="app_bars.png"></img>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="barPlot" style="background:;">
+  <hgroup>
+    <h2>If more than 4 days are selected...</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>a line plot will be generated.
+<br/>
+<br/></p>
+
+<div style='text-align: center;'>
+    <img width=600px src="app_lines.png"></img>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="linePlot" style="background:;">
+  <hgroup>
+    <h2>Project Links</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Capital Bike Share Shiny App: <a href="https://ssylvest00.shinyapps.io/CapitalBikeShareApp/">https://ssylvest00.shinyapps.io/CapitalBikeShareApp/</a></p>
+
+<p>Shiny R files: LINKLINKLINK</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='NA'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Introduction'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Instructions'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='If fewer than 5 days are selected...'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='If more than 4 days are selected...'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='Project Links'>
+         6
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
