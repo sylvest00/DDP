@@ -63,9 +63,11 @@ will be displayed as a time series line plot (bottom row).
 
 
 
-<div style='text-align: center;'>
-    <img width=500px src="gridPlot.png" align="middle"></img>
+
+<div style="text-align: center;">
+    <img width=500px src="gridPlot.png"></img>
 </div>
+
 
 --- #plots
 

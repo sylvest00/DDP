@@ -153,9 +153,11 @@ d2 <- ggplot(df_line, aes(x = dates, y = durationTotals, colour = factor(riderTy
 ```{r, warning = FALSE, message = FALSE, echo=FALSE, fig.height=5,fig.align='center',eval=FALSE}
 grid.arrange(t1,t2,d1,d2,ncol=2,nrow=2)
 ```
-<div style='text-align: center;'>
-    <img width=500px src="gridPlot.png" align="middle"></img>
+
+<div style="text-align: center;">
+    <img width=500px src="gridPlot.png"></img>
 </div>
+
 
 --- #plots
 
