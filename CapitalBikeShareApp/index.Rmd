@@ -2,7 +2,7 @@
 title       : Visualizing Capital Bike Share Data
 subtitle    : Developing Data Products, Shiny App Project
 author      : github.com/sylvest00
-job         : 
+job         : January 29, 2017
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
@@ -37,7 +37,7 @@ server.R file and ui.R file
 ## Introduction
 The Capital Bike Share Shiny App visualizes the frequency and total hours in which bikes were rented under the [Capital Bike Share program] (https://www.capitalbikeshare.com/) in Washington, D.C.
 
-The data is provided by the bike share program on their [website](https://www.capitalbikeshare.com/system-data). The data sets are
+The data can be accessed via the bike share [website](https://www.capitalbikeshare.com/system-data). The data sets are
 large, so only one reported annual quarter (quarter #2 from April 1, 2016 to
 June 30, 2016) was used.
 
@@ -82,6 +82,9 @@ a line plot will be generated.
 --- #linePlot
 
 ## Project Links
-Capital Bike Share Shiny App: https://ssylvest00.shinyapps.io/CapitalBikeShareApp/
 
-Shiny R files: https://github.com/sylvest00/DDP/tree/gh-pages/CapitalBikeShareApp
+- Capital Bike Share Shiny App:<br/>
+https://ssylvest00.shinyapps.io/CapitalBikeShareApp/
+
+- Shiny R files in Github repo:<br/>
+https://github.com/sylvest00/DDP/tree/master/CapitalBikeShareApp
