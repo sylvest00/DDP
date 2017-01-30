@@ -18,28 +18,23 @@ knit        : slidify::knit2slides
 }
 </style>
 
-## Presentation Outline
-The following slides are arranged as follows:
-
-- Introduction to the app
-
-- Instructions
-
-- Image of the app when fewer than 5 days are selected
-
-- Image of the app when more than 4 days are selected
-
-- Links to the app and Github repository containing the associated
-server.R file and ui.R file
-
---- .class #outline
 
 ## Introduction
-The Capital Bike Share Shiny App visualizes the frequency and total hours in which bikes were rented under the [Capital Bike Share program] (https://www.capitalbikeshare.com/) in Washington, D.C.
+The Capital Bike Share Shiny App visualizes the frequency and total hours in which 
+bikes were rented under the [Capital Bike Share program] (https://www.capitalbikeshare.com/) in Washington, D.C.
+
+<br/>
 
 The data can be accessed via the bike share [website](https://www.capitalbikeshare.com/system-data). The data sets are
 large, so only one reported annual quarter (quarter #2 from April 1, 2016 to
 June 30, 2016) was used.
+
+<br/>
+
+The data set includes a record of every rental purchased for each day in the second quarter of the year.
+To generate the figures for this app, the number of rentals as well as the total amount of time bikes were rented is computed across 
+a user defined range of dates. This information is displayed as either a time series line plot or a bar plot depending upon
+the number of days selected.
 
 --- .class #intro &twocol w1:40% w2:60%
 
@@ -55,31 +50,21 @@ Helper instructions are located at the top of the side bar panel.
 <span class = 'red'>WARNING: It may take upwards of 20-30 seconds for the figures to render.</span>
 
 *** =right
-<img width=400px src="run_button2.png"></img>
+<img width=300px src="run_button2.png"></img>
 
 --- .class #instructions
 
-## If fewer than 5 days are selected...
-a bar plot will be generated.
-<br/>
-<br/>
+## Changes in graph presentation based upon date selection
 
-<div style='text-align: center;'>
-    <img width=600px src="app_bars.png"></img>
-</div>
 
---- #barPlot
+If fewer than 5 days are selected, a bar plot will be displayed (top row). Otherwise, the computations
+will be displayed as a time series line plot (bottom row).
 
-## If more than 4 days are selected...
-a line plot will be generated.
-<br/>
-<br/>
 
-<div style='text-align: center;'>
-    <img width=600px src="app_lines.png"></img>
-</div>
 
---- #linePlot
+<img src="assets/fig/unnamed-chunk-3-1.png" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" style="display: block; margin: auto;" />
+
+--- #plots
 
 ## Project Links
 

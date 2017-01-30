@@ -50,33 +50,23 @@
 }
 </style>
 
-<h2>Presentation Outline</h2>
+<h2>Introduction</h2>
 
-<p>The following slides are arranged as follows:</p>
+<p>The Capital Bike Share Shiny App visualizes the frequency and total hours in which 
+bikes were rented under the <a href="https://www.capitalbikeshare.com/">Capital Bike Share program</a> in Washington, D.C.</p>
 
-<ul>
-<li><p>Introduction to the app</p></li>
-<li><p>Instructions</p></li>
-<li><p>Image of the app when fewer than 5 days are selected</p></li>
-<li><p>Image of the app when more than 4 days are selected</p></li>
-<li><p>Links to the app and Github repository containing the associated
-server.R file and ui.R file</p></li>
-</ul>
-
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="class" id="outline" style="background:;">
-  <hgroup>
-    <h2>Introduction</h2>
-  </hgroup>
-  <article data-timings="">
-    <p>The Capital Bike Share Shiny App visualizes the frequency and total hours in which bikes were rented under the <a href="https://www.capitalbikeshare.com/">Capital Bike Share program</a> in Washington, D.C.</p>
+<p><br/></p>
 
 <p>The data can be accessed via the bike share <a href="https://www.capitalbikeshare.com/system-data">website</a>. The data sets are
 large, so only one reported annual quarter (quarter #2 from April 1, 2016 to
 June 30, 2016) was used.</p>
+
+<p><br/></p>
+
+<p>The data set includes a record of every rental purchased for each day in the second quarter of the year.
+To generate the figures for this app, the number of rentals as well as the total amount of time bikes were rented is computed across 
+a user defined range of dates. This information is displayed as either a time series line plot or a bar plot depending upon
+the number of days selected.</p>
 
   </article>
   <!-- Presenter Notes -->
@@ -100,7 +90,7 @@ different account types, casual and registers.</p>
 
 </div>
 <div style='float:right;width:48%;'>
-  <p><img width=400px src="run_button2.png"></img></p>
+  <p><img width=300px src="run_button2.png"></img></p>
 
 </div>
   </article>
@@ -109,39 +99,19 @@ different account types, casual and registers.</p>
 
 <slide class="class" id="instructions" style="background:;">
   <hgroup>
-    <h2>If fewer than 5 days are selected...</h2>
+    <h2>Changes in graph presentation based upon date selection</h2>
   </hgroup>
   <article data-timings="">
-    <p>a bar plot will be generated.
-<br/>
-<br/></p>
+    <p>If fewer than 5 days are selected, a bar plot will be displayed (top row). Otherwise, the computations
+will be displayed as a time series line plot (bottom row).</p>
 
-<div style='text-align: center;'>
-    <img width=600px src="app_bars.png"></img>
-</div>
+<p><img src="assets/fig/unnamed-chunk-3-1.png" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" style="display: block; margin: auto;" /></p>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="" id="barPlot" style="background:;">
-  <hgroup>
-    <h2>If more than 4 days are selected...</h2>
-  </hgroup>
-  <article data-timings="">
-    <p>a line plot will be generated.
-<br/>
-<br/></p>
-
-<div style='text-align: center;'>
-    <img width=600px src="app_lines.png"></img>
-</div>
-
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="" id="linePlot" style="background:;">
+<slide class="" id="plots" style="background:;">
   <hgroup>
     <h2>Project Links</h2>
   </hgroup>
@@ -169,32 +139,20 @@ different account types, casual and registers.</p>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Introduction'>
+        data-slide=2 title='Instructions'>
          2
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=3 title='Instructions'>
+        data-slide=3 title='Changes in graph presentation based upon date selection'>
          3
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=4 title='If fewer than 5 days are selected...'>
+        data-slide=4 title='Project Links'>
          4
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=5 title='If more than 4 days are selected...'>
-         5
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=6 title='Project Links'>
-         6
       </a>
     </li>
   </ul>
