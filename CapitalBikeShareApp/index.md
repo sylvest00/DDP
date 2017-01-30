@@ -62,7 +62,10 @@ will be displayed as a time series line plot (bottom row).
 
 
 
-<img src="assets/fig/unnamed-chunk-3-1.png" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" style="display: block; margin: auto;" />
+
+<div style='text-align: center;'>
+    <img width=500px src="gridPlot.png" align="middle"></img>
+</div>
 
 --- #plots
 
